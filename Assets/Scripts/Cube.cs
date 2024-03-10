@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class Cube : MonoBehaviour
 {
-    // Start is called b
-
     CubeGenerator cg;
 
     void Start()

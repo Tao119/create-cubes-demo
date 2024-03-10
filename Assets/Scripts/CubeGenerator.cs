@@ -20,7 +20,7 @@ public class CubeGenerator : MonoBehaviour
     {
         float newX = Random.value * rangeX;
         float newY = Random.value * rangeY;
-        while (cubes.Count > 0 && cubes.All(value => Mathf.Abs(value.transform.position.x - newX) < cube.transform.localScale.x && Mathf.Abs(value.transform.position.y - newY) < cube.transform.localScale.y))
+        while (cubes.Count > 0 && cubes.All(value => Mathf.Abs(value.transform.position.x - newX) < cube.transform.localScale.x || Mathf.Abs(value.transform.position.y - newY) < cube.transform.localScale.y))
         {
             newX = Random.value * rangeX;
             newY = Random.value * rangeY;
